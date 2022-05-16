@@ -1,3 +1,6 @@
+
+//Activity 1
+
 const factorial = (n) => {
     if ((n === 0) || (n===1)) {
         return 1;
@@ -7,7 +10,7 @@ const factorial = (n) => {
 }
 console.log(factorial(33));
 
-
+//Activity 2
 let orderCount = 0;
 
 const takeOrder = (topping) => {
@@ -17,35 +20,24 @@ const takeOrder = (topping) => {
 takeOrder("pineapple");
 
 
+// Activity 3
 
 
+const userPin = 1234;
+let withAmount = 30;
+let balance = 1000;
 
-// const userPin = 1234;
-// let withAmount = 30;
-// let balance = 1000;
+const cashWithdraw = (userPin, withAmount) => {
 
-// const cashWithdraw = (Userpin, withAmount) => {
-
-//     if (userPin = true) {
-//         let newBalance = (balance-amount);
-//         console.log(`Withdrawing ${withAmount} from account. Your new balance is ${new}`)
-//     }
-// }
-
-//Nick/Olly version
-let pinNum = 4454;
-let amount = 30;
-// let balance = 100;
-
-const cashWithdrawal = (amount, pinNum) => {
-
-    if (pinNum = true) {
-        let newBalance = balance - amount;
-        console.log ("Withdrawing £ ${amount}, your remaining balance is £ ${newBalance}.");
+    if (userPin = true && withAmount < balance) {
+        let newBalance = (balance-withAmount);
+        console.log(`Withdrawing ${withAmount} from account. Your new balance is ${newBalance}`)
+    }
+    else if (withAmount > balance) {
+        console.log("You have insufficient funds for this amount")
     }
     else {
-        console.log("incorrect pin, no withdrawal available");
+        console.log("Your PIN Number is incorrect.")
     }
 }
-
-cashWithdrawal("30",4444);
+cashWithdraw(4444,"1100");

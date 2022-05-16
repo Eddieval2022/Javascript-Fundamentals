@@ -1,61 +1,61 @@
-// // Activity 1
+// Activity 1
 
-// let favFilms = ["Roadhouse", "The Matrix", "Robocop", "Limitless", "Pulp Fiction" ];
+let favFilms = ["Roadhouse", "The Matrix", "Robocop", "Limitless", "Pulp Fiction" ];
 
-// favFilms.push( "The Butterfly Effect", "War Dogs" );
+favFilms.push( "The Butterfly Effect", "War Dogs" );
 
-// for (let i = 0; i<favFilms.length; i++){
-//     console.log(favFilms[i]);
-// }
+for (let i = 0; i<favFilms.length; i++){
+    console.log(favFilms[i]);
+}
 
-// // Activity 2
-
-
-// let randNum = [];
-// for(let i = 0; i < 6; i++){
-// console.log (Math.floor((Math.random()*50)+1)); (randNum);
-// }
-
-// // Activity 3
-
-// // let num = [];
-
-// // for(let i = 0; i < 10; i++){
-// //     if (i % 1 == 0){
-// //             num.push(i);
-// //     }
-// // }
-
-// // console.log(num.reverse());
-
-// // Activity 4
+// Activity 2
 
 
-// let films = ["Roadhouse", "Ghostbusters", "The Matrix", "Robocop"];
+let randNum = [];
+for(let i = 0; i < 6; i++){
+console.log (Math.floor((Math.random()*50)+1)); (randNum);
+}
 
-// for (let i = 0; i<films.length; i++){
-//     console.log(films[i])
-// }
-// if (films[2] == "Ghostbusters"){
-//     console.log("Yay it's Ghostbusters!");
-// }
-// else (console.log("Boo! we want Ghostbusters!"))
+// Activity 3
+
+let num = [];
+
+for(let i = 0; i < 10; i++){
+    if (i % 1 == 0){
+            num.push(i);
+    }
+}
+
+console.log(num.reverse());
+
+// Activity 4
 
 
-//  //Activity 5
+let films = ["Roadhouse", "Ghostbusters", "The Matrix", "Robocop"];
+
+for (let i = 0; i<films.length; i++){
+    console.log(films[i])
+}
+if (films[2] == "Ghostbusters"){
+    console.log("Yay it's Ghostbusters!");
+}
+else (console.log("Boo! we want Ghostbusters!"))
+
+
+ //Activity 5
 
 
 
-//  for(let i = 0; i < 6; i++){
-// let Check = Math.floor((Math.random()*30)+1);
+ for(let i = 0; i < 6; i++){
+let Check = Math.floor((Math.random()*30)+1);
  
 
-// if (Check % 7 === 0){
-//     console.log(`The number ${Check} is Divisable by 7`)}
+if (Check % 7 === 0){
+    console.log(`The number ${Check} is Divisable by 7`)}
 
-// else 
-//     {console.log (`The number ${Check} is NOT Divisable by 7`)}
-// }
+else 
+    {console.log (`The number ${Check} is NOT Divisable by 7`)}
+}
 
     // Activity 6
 

@@ -6,15 +6,15 @@
 
 
 // // const capitalWord = 'raceCAR'
-// const num = 123221;
-// const isPalindrome = (str) => {
-//   const reversed = str.split('').reverse().join('')
-//   return str === reversed;}
-// if (isPalindrome(num.toString())) console.log(`Yes ${num} is a palindrome`)
-// else console.log(`No ${num} is not a palindrome`)
+const num = 123221;
+function isPalindrome  (str)  {
+  const reversed = str.split('').reverse().join('')
+  return str === reversed;}
+if (isPalindrome(num.toString())) console.log(`Yes ${num} is a palindrome`)
+else console.log(`No ${num} is not a palindrome`)
 
-// // if (isPalindrome(capitalWord.toLowerCase())) console.log(`Yes ${capitalWord} is a palindrome`)
-// // else console.log(`No ${capitalWord} is not a palindrome`)
+// if (isPalindrome(capitalWord.toLowerCase())) console.log(`Yes ${capitalWord} is a palindrome`)
+// else console.log(`No ${capitalWord} is not a palindrome`)
 
 let favouriteSongs = [
   "Book of Mormon - Man up",

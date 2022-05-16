@@ -40,18 +40,19 @@ console.log(pet.drink())
 
 const coffeeShop = {
     branch: "Oldham",
-    drinks: ["Coke","Orange","Tea" ,"Coffee","Chocolate"],
-        cokePrice: 1.10,
-        orangePrice: 1.50,
-        teaprice: 1.50,
-        cofPrice: 1.70,
-        chocPrice: 1.60,
-    food: ["Toast" = 0.90,"Sandwich" = 2.00,"Toastie" = 2.50,"Soup" = 3.00,],
-       ToastPrice: 0.90,
-       SandPrice: 2.00,
-       ToastiePrice: 2.50,
-       soupPrice: 3.00,
+    drinks: {
+        coke: 1.10,
+        orange: 1.50,
+        tea: 1.50,
+        coffee: 1.70,
+        chocolate: 1.60,},
+    food:   {
+       Toast: 0.90,
+       Sand: 2.00,
+       Toastie: 2.50,
+       soup: 3.00,}
 
+       
 
 }//  
 
@@ -83,3 +84,58 @@ const coffeeShop = {
 // }
 
 // console.log(`Your total comes to £${total}.`);
+
+// Objects: Activity 3-------------------------------------
+
+//Declaring variables
+const coffeeShop1 = {
+    branch: "Manchester",
+  
+    drinks: {
+      americano: 2,
+      latte: 2.5,
+      espresso: 1.5,
+      capuccino: 3,
+    },
+  
+    food: {
+      cookie: 1.5,
+      muffin: 2,
+      sandwich: 3,
+    },
+  
+    //Function which creates a new array, using the ... spread operator, and functionality to connect the drinks order and cost.
+    drinksOrdered(...drinks) {
+      let cost = 0;
+      const drinksStr = drinks.join(" & ");
+      drinks.forEach((drink) => (cost += this.drinks[drink]));
+      cost = cost.toString().split(".");
+      cost[1] = cost[1].padEnd(2, "0");
+      cost = cost.join(".");
+  
+      return this.displayOrder(drinksStr, cost);
+    },
+   //function which again creates a new array and functionality to connect the order and cost.
+    foodOrdered(...food) {
+      let cost = 0;
+      const foodStr = food.join(" & ");
+  
+      food.forEach((item) => (cost += this.food[item]));
+  
+      cost = cost.toString().split(".");
+      cost[1] = cost[1].padEnd(2, "0");
+      cost = cost.join(".");
+  
+      return this.displayOrder(foodStr, cost);
+    },
+  
+    //function to create a string to inject the variables using template literals. 
+    displayOrder(order, cost) {
+      return console.log(
+        `Your ${order} will be with you shortly, the total is £${cost}.`
+      );
+    },
+  };
+  
+  coffeeShop.drinksOrdered("capuccino", "espresso");
+  coffeeShop.foodOrdered("cookie", "muffin");

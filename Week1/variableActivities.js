@@ -45,9 +45,9 @@ let space8 = " ";
 let space9 = " ";
 
 let row = [
-            `   |   |   \n ${space1} | ${space2} | ${space3}  \n   |   |   ,`
-`   |   |   \n ${space4} | ${space5} | ${space6}  \n   |   |   ,`
-`   |   |   \n ${space7} | ${space8} | ${space9}  \n   |   |   ,`
+            `   |   |   \n ${space1} | ${space2} | ${space3}  \n   |   |   `,
+`   |   |   \n ${space4} | ${space5} | ${space6}  \n   |   |   `,
+`   |   |   \n ${space7} | ${space8} | ${space9}  \n   |   |   `,
 ]
 
     for (let i = 0; i < row.length; i++){
@@ -58,24 +58,24 @@ let row = [
     }
 
 
-const Space1 = "x"
-const Space2 = "o"
-const Space3 = " "
-const Space4 = "x"
-const Space5 = "x"
-const Space6 = " "
-const Space7 = "o"
-const Space8 = " "
-const Space9 = " "
+// const Space1 = "x"
+// const Space2 = "o"
+// const Space3 = " "
+// const Space4 = "x"
+// const Space5 = "x"
+// const Space6 = " "
+// const Space7 = "o"
+// const Space8 = " "
+// const Space9 = " "
 
-console.log("      |        |       ")
-console.log(`    ${Space1} |   ${Space2}    |   ${Space3}  `)
-console.log("      |        |       ")
-console.log("----------------------")
-console.log("      |        |       ")
-console.log(`    ${Space4} |   ${Space5}    |   ${Space6}  `)
-console.log("      |        |       ")
-console.log("----------------------")
-console.log("      |        |       ")
-console.log(`    ${Space7} |   ${Space8}    |   ${Space9}  `)
-console.log("      |        |       ")
+// console.log("      |        |       ")
+// console.log(`    ${Space1} |   ${Space2}    |   ${Space3}  `)
+// console.log("      |        |       ")
+// console.log("----------------------")
+// console.log("      |        |       ")
+// console.log(`    ${Space4} |   ${Space5}    |   ${Space6}  `)
+// console.log("      |        |       ")
+// console.log("----------------------")
+// console.log("      |        |       ")
+// console.log(`    ${Space7} |   ${Space8}    |   ${Space9}  `)
+// console.log("      |        |       ")
